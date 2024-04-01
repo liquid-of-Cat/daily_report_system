@@ -11,19 +11,40 @@ body {
     background-color: #333333;
 }
 
+#header_menu {
+    width: 57%;
+    padding-top: 17px;
+    padding-left: 3%;
+    display: inline-block;
+}
+
+#header a {
+    color: #eeeeee;
+}
+
 #content {
     width: 94%;
     margin-top: 15px;
     padding-left: 3%;
 }
 
+#employee_name {
+    color: #cccccc;
+    width: 36%;
+    padding-right: 3%;
+    text-align: right;
+    display: inline-block;
+}
+
 h1 {
-    width: 94%;
-    padding-top: 17px;
-    padding-left: 3%;
     font-size: 24px;
+    display: inline;
+}
+
+h1 a {
     color: #eeeeee;
 }
+
 
 h2 {
     font-size: 36px;
