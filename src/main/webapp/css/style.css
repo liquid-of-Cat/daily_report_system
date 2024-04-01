@@ -45,6 +45,10 @@ a {
     color: #24738e;
 }
 
+select {
+    height: 30px;
+}
+
 table, tr, th, td {
     border: 1px solid #cccccc;
 }
