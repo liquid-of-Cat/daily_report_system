@@ -22,7 +22,7 @@ public class ReportConverter {
                 rv.getReportDate(),
                 rv.getTitle(),
                 rv.getContent(),
-                rv.getCreatedAT(),
+                rv.getCreatedAt(),
                 rv.getUpdatedAt());
     }
     /**
@@ -73,7 +73,7 @@ public class ReportConverter {
         r.setReportDate(rv.getReportDate());
         r.setTitle(rv.getTitle());
         r.setContent(rv.getContent());
-        r.setCreatedAt(rv.getCreatedAT());
+        r.setCreatedAt(rv.getCreatedAt());
         r.setUpdateAt(rv.getUpdatedAt());
 
 

@@ -73,6 +73,15 @@ public class ReportService extends ServiceBase{
     }
 
     /**
+     * idを条件に取得したデータをReportViewのインスタンスで返却する
+     * @param id
+     * @return 取得データのインスタンス
+     */
+    public ReportView findOne(int id) {
+        return ReportConverter.toView(findOneInternal(id));
+    }
+
+    /**
      * 画面から入力された日報の登録内容を元にデータを1件作成し、日報テーブルに登録する
      * @param rv 日報の登録内容
      * @return バリデーションで発生したエラーのリスト
@@ -81,7 +90,7 @@ public class ReportService extends ServiceBase{
         List<String> errors = ReportValidator.validate(rv);
         if (errors.size() == 0) {
             LocalDateTime ldt = LocalDateTime.now();
-            rv.setCreatedAT(ldt);
+            rv.setCreatedAt(ldt);
             rv.setUpdatedAt(ldt);
             createInternal(rv);
         }

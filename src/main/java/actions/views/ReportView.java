@@ -48,7 +48,7 @@ public class ReportView {
      * 登録に日時
      */
 
-   private LocalDateTime createdAT;
+   private LocalDateTime createdAt;
 
    /**
     * 更新日時
