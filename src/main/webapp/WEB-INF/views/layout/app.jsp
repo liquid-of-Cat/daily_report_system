@@ -3,7 +3,6 @@
 <%@ page import="constants.ForwardConst" %>
 <%@ page import="constants.AttributeConst" %>
 
-
 <c:set var="actTop" value="${ForwardConst.ACT_TOP.getValue()}" />
 <c:set var="actEmp" value="${ForwardConst.ACT_EMP.getValue()}" />
 <c:set var="actRep" value="${ForwardConst.ACT_REP.getValue()}" />
@@ -12,15 +11,15 @@
 <c:set var="commIdx" value="${ForwardConst.CMD_INDEX.getValue()}" />
 <c:set var="commOut" value="${ForwardConst.CMD_LOGOUT.getValue()}" />
 
-
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title><c:out value="日報管理システム" /></title>
-        <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
-        <link rel="stylesheet" href="<c:url value='/css/style.css' />">
-    </head>
+<head>
+<meta charset="UTF-8">
+    <title><c:out value="日報管理システム" /></title>
+    <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+    <link rel="stylesheet" href="<c:url value='/css/style.css' />">
+</head>
+<body>
     <div id="wrapper">
         <div id="header">
             <div id="header_menu">
